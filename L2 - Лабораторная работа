@@ -1,0 +1,18 @@
+a = input('Укажите имя: ')
+b = input('Укажите фамилию: ')
+s = input('Укажите отчество: ')
+d = input('Укажите номер группы: ')
+
+name = (b + ' ' + a + ' ' + s)
+lab = 'Лабораторная работа № 1'
+gr = 'Выполнено: ст. гр. №'
+
+def print_table(lab, name, gr):
+    max_len = max(len(lab), len(name), len(gr))
+    print('*'*(max_len + 5))
+    print('*', lab, ' '*(max_len-len(lab)), '*', sep=' ')
+    print('*', gr, d, ' '*(max_len-len(gr+ ' ' + d)), '*', sep=' ')
+    print('*', name, ' '*(max_len-len(name)), '*', sep=' ')
+    print('*'*(max_len + 5))
+
+print_table(lab, name, gr)
