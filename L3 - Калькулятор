@@ -1,0 +1,36 @@
+def add(a,b):
+    return a+b   
+ 
+def sub(a,b):
+    return a-b
+    
+def mul(a,b):
+    return a*b
+
+def div(a,b):
+    return a/b
+
+def main ():
+    a = float(input('a: '))
+    b = float(input('b: '))
+    c = (input('Choose action: + - * /'))
+    if c == '+':
+        result=add(a,b)
+        print(result)
+    elif c == '-':
+        result=sub(a,b)
+        print(result)
+    elif c == '*':
+        result=mul(a,b)
+        print(result)
+    elif c == '/':
+        b != 0
+        result=div(a,b)
+        print(result)
+
+main()
+
+while True:
+    main()
+    if input('Enter 0 if you want to stop') == '0':
+        break
